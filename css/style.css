@@ -138,3 +138,21 @@ img {
     background: rgba(var(--c-brand-rgb), 0.1);
     ;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* COUNTER Section */
+#counter{
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../assets/images/counter.jpg);
+    background-size: cover;
+    background-position: center;
+}
