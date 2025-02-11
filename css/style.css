@@ -140,21 +140,45 @@ img {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* COUNTER Section */
 #counter{
     background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../assets/images/counter.jpg);
     background-size: cover;
     background-position: center;
+}
+
+/* PORTFOLIO Section */
+.image-zoom{
+    position: relative;
+}
+.image-zoom-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.image-zoom-wrapper img{
+     transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wrapper img {
+    transform: scale(1.1);
+}
+.portfolio-item .search-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    opacity: 0;
+}
+.portfolio-item:hover .search-icon {
+    opacity: 1;
+    top: 50%;
 }
